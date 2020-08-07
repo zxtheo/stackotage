@@ -1,7 +1,9 @@
 const express = require('express')
 const app = express()
-var http = require('http').createServer(app);
-var io = require('socket.io')(http);
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
+
+const PORT = process.env.PORT || 3000;
  
 app.set('view engine', 'pug')
 app.use(express.static('public'))
@@ -13,8 +15,8 @@ app.get('/', (req, res) => {
     })
 })
  
-http.listen(3000, () => {
-    console.log('Listening on port 3000')
+http.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`)
 })
 
 // This thing
