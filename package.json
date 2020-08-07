@@ -1,0 +1,32 @@
+{
+  "name": "stackotage",
+  "version": "0.0.1",
+  "description": "stack-o-tage",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxtheo/stackotage.git"
+  },
+  "keywords": [
+    "stack"
+  ],
+  "author": "Holly Everett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zxtheo/stackotage/issues"
+  },
+  "homepage": "https://github.com/zxtheo/stackotage#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
